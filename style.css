@@ -1,0 +1,232 @@
+*{
+    box-sizing: border-box;
+    /*border: 2px solid yellow;*/
+}
+body{
+    font-family: 'Ubuntu', sans-serif;
+    margin:0;
+    padding:0;
+}
+section{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+    /*border: 3px dotted blue;*/
+    flex-direction: column;
+}
+article{
+    color: white;
+    justify-content: center;
+    background: rgba(0,0,0,0.8);
+    padding:0;
+}
+.titlebar{
+    flex-direction: row;
+    width: 50vw;
+    justify-content: space-between;
+}
+.header-playlist{
+    padding: 2vh 1.5vw;
+    width: 43vw;
+    text-align: center;
+}
+.header-top-collapse{
+    padding: 2vh 1.5vw;
+    width: 3.5vw;
+}
+.header-top-collapse:hover{
+    background: rgba(0,0,0,0.7);
+}
+.header-top-menu{
+    padding: 2vh 1.5vw;
+    width: 3.5vw;
+}
+.header-top-menu:hover{
+    background: rgba(0,0,0,0.7);
+}
+.musicplayer{
+    min-width: 50vw;
+    min-height: 90vh;
+    /*border: 2px solid purple;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.songtext{
+    width:15vw;
+    padding-left: 1vw;
+    background: rgba(255,255,255,0.1);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+p{
+    color: white;
+    text-align: left;
+}
+.playlist-window{
+    height: 10vh;
+    max-width: 25vw;
+    padding: 1vh 1.5vw;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+/*.playlist-window:hover{
+    background: rgba(0,0,0,0.7);
+}*/
+.playlist-window img{
+    height: 7vh;
+    width: 4vw;
+}
+.playlist-playbutton{
+    font-size: 20px;
+    padding: 2.38vh 1.5vw;
+    justify-content: center;
+    background: rgba(255,255,255,0.1);
+}
+.player{
+    min-height: 70vh;
+    background: rgba(0,0,0,0.8);
+}
+.album-cover-background{
+    height:50vh;
+    min-width: 25vw;
+    max-width: 25vw;    
+}
+.album-cover{
+    height: 50vh;
+    width:25vw;
+    background: rgba(255,255,255,0.1);
+}
+.album-cover img{
+    height: 30vh;
+    width: 20vw;
+    padding-top: 8vh;
+    padding-left: 5vw;
+}
+.titlebar-below-album-cover{
+    display: flex;
+    background: rgba(255, 255, 255, 1);
+}
+.add-song-button{
+    padding: 2.5vh 2vw;
+    width: 5vw;
+    font-size: 20px;
+}
+.add-song-button:hover{
+    text-shadow:1px 1px 10px #fff, 1px 1px 10px #ccc;
+}
+h4, h6{
+    margin:0;
+    padding:0;
+}
+.songtext-musicplayer{
+    text-align: center;
+    width:15vw;
+    padding: 1vh 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.favorite-button{
+    padding: 2.5vh 2vw;
+    width: 5vw;
+    font-size: 20px;
+    background: rgba(0,0,0,0.8);
+}
+.favorite-button:hover{
+    text-shadow:1px 1px 10px #fff, 1px 1px 10px #ccc;
+}
+h3{
+    padding:0;
+    margin:0;
+    font-size: 14px;
+}
+.progressbar{
+    background: rgba(255, 255, 255, 0.075);
+    display: flex;
+}
+.current-time{
+    background: rgba(0,0,0,0);
+    padding: 1.2vh 1vw;
+    width:4.5vw;
+    align-items: center;
+}
+.song-slider{
+    background: rgba(255,255,255,0);
+    padding: 1vh;
+    width: 14vw;
+}
+progress[value]{
+    width: 13vw;
+    height: 1vh;
+    background: rgba(0,0,0,0);
+}
+.song-length{
+    background: rgba(0,0,0,0);
+    padding: 1.2vh 1vw;
+    width:4.5vw;
+    justify-content: center;
+}
+.controllers{
+    background: rgba(255, 255, 255, 0.075);
+    display: flex;
+    font-size:30px;
+    justify-content: space-around;
+    align-items: center;
+}
+.repeat-button{
+    justify-content: center;
+    font-size: 25px;
+    background: rgba(255,255,255,0);
+}
+.previous-button{
+    background: rgba(255,255,255,0);
+}
+.play-button{
+    font-size: 59px;
+    background: rgba(255,255,255,0);
+}
+.next-button{
+    background: rgba(255,255,255,0);    
+}
+.shuffle-button{
+    font-size: 25px;
+    background: rgba(255,255,255,0);
+}
+.repeat-button:hover{
+    text-shadow:1px 1px 10px #fff, 1px 1px 10px #ccc;    
+}
+.previous-button:hover{
+    text-shadow:1px 1px 10px #fff, 1px 1px 10px #ccc;    
+}
+.play-button:hover{
+    text-shadow:1px 1px 10px #fff, 1px 1px 10px #ccc;
+    
+}
+.next-button:hover{
+    text-shadow:1px 1px 10px #fff, 1px 1px 10px #ccc;    
+}
+.shuffle-button:hover{
+    text-shadow:1px 1px 10px #fff, 1px 1px 10px #ccc;    
+}
+.far.fa-caret-square-right:hover{
+    text-shadow:1px 1px 10px #fff, 1px 1px 10px #ccc;
+}
+.play{
+    background: rgba(255,255,255,0);
+    border:0;
+    padding:0;
+    margin:0;
+    color: white;
+}
+.pause{
+    background: rgba(255,255,255,0);
+    border:0;
+    padding:0;
+    margin:0;
+    color: white;
+}
