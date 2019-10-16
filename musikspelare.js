@@ -60,7 +60,6 @@ function toggleMusic(){
 }
 function previousSong(){
   player.currentTime = 0
-  player.play() 
+  if(player.paused){} else{
+  player.play()} 
 }
-
-
